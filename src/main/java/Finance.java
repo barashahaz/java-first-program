@@ -12,7 +12,7 @@ public class Finance {
 
     public final static String BEST_LOAN_RATES = "bestLoanRates";
     public final static String SAVINGS_CALCULATOR = "savingsCalculator";
-    public final static String MORTGAGE_CALCULATOR = "mortagecalculator";
+    public final static String MORTGAGE_CALCULATOR = "mortgageCalculator";
 
     public final static Map<String, String> commandsToUsage
             = Map.of(
@@ -64,6 +64,6 @@ public class Finance {
             System.out.println(commandsToUsage.get(args[0]));
         }
         executeCommand(command, Arrays.copyOfRange(args, 1, args.length));
-        
+
     }
 }
